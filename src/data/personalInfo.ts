@@ -161,7 +161,7 @@ export const personalInfo: PersonalInfo = {
       technologies: ["Flutter", "Dart", "Firebase", "Google Maps API"],
       link: "https://github.com/Nghia2624/beauty_spot_lite",
       github: "https://github.com/Nghia2624/beauty_spot_lite",
-      image: "public/images/NemMT.jpg",
+      image: "/images/NemMT.jpg",
       featured: true,
       startDate: "2024-01",
       endDate: "2024-03"
@@ -172,7 +172,7 @@ export const personalInfo: PersonalInfo = {
       technologies: ["Go", "React", "WebSocket", "Node.js", "MongoDB"],
       link: "https://github.com/Nghia2624/webchat",
       github: "https://github.com/Nghia2624/webchat",
-      image: "public/images/NemMT.jpg",
+      image: "/images/NemMT.jpg",
       featured: true,
       startDate: "2023-09",
       endDate: "2023-12"
@@ -183,7 +183,7 @@ export const personalInfo: PersonalInfo = {
       technologies: ["IoT", "AI", "Python", "Raspberry Pi", "TensorFlow", "Node-RED"],
       link: "https://github.com/Nghia2624/VuonThongMinh",
       github: "https://github.com/Nghia2624/VuonThongMinh",
-      image: "public/images/NemMT.jpg",
+      image: "/images/NemMT.jpg",
       featured: true,
       startDate: "2023-05",
       endDate: "2023-08"

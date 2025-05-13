@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/personalInfo';
-import { FaGithub, FaExternalLinkAlt, FaFilter } from 'react-icons/fa';
+import { FaGithub, FaFilter } from 'react-icons/fa';
 import { useState, useMemo } from 'react';
 
 const Projects = () => {
