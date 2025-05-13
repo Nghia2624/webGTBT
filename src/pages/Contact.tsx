@@ -21,16 +21,16 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Thay thế bằng Service ID của bạn
-        'YOUR_TEMPLATE_ID', // Thay thế bằng Template ID của bạn
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_name: 'Nghĩa', // Tên người nhận
+          to_name: 'Nghĩa',
         },
-        'YOUR_PUBLIC_KEY' // Thay thế bằng Public Key của bạn
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       toast.success('Tin nhắn đã được gửi thành công!');
