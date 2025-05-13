@@ -1,11 +1,10 @@
 import { memo, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { personalInfo } from '../data/personalInfo';
-import { FaGithub, FaFacebook, FaArrowDown, FaDownload, FaCode, FaServer, FaTools, FaLinkedin } from 'react-icons/fa';
-import { SiZalo } from 'react-icons/si';
+import { FaArrowDown, FaDownload } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
-import { NAV_LINKS, SOCIAL_LINKS, SKILL_CATEGORIES } from '../utils/constants';
+import { SOCIAL_LINKS, SKILL_CATEGORIES } from '../utils/constants';
 
 // Animation variants
 const fadeInUp = {
@@ -120,14 +119,6 @@ const ProjectCard = memo(({ project, index }: { project: typeof personalInfo.pro
             className="text-accent hover:text-accent/80 transition-colors text-sm sm:text-base"
           >
             Xem mã nguồn
-          </a>
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent hover:text-accent/80 transition-colors text-sm sm:text-base"
-          >
-            Xem demo
           </a>
         </div>
         {project.startDate && project.endDate && (
@@ -254,7 +245,7 @@ const Home = () => {
                   variants={fadeInUp}
                   className="flex flex-wrap gap-3 md:gap-4 pt-2"
                 >
-                  {socialLinks.map((link, index) => (
+                  {socialLinks.map((link) => (
                     <SocialLink
                       key={link.label}
                       href={link.url}
@@ -325,7 +316,7 @@ const Home = () => {
                   key={key} 
                   skill={{
                     name: category.title,
-                    level: 'Advanced',
+                    level: 'Beginner',
                     items: category.skills
                   }} 
                   index={index} 

@@ -121,16 +121,6 @@ const Projects = () => {
                         <FaGithub size={20} />
                         <span className="text-sm">Source Code</span>
                       </a>
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-400 hover:text-accent transition-colors"
-                        aria-label="Project Demo"
-                      >
-                        <FaExternalLinkAlt size={20} />
-                        <span className="text-sm">Live Demo</span>
-                      </a>
                     </div>
                   </div>
                 </motion.div>

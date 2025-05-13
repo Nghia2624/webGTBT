@@ -112,8 +112,8 @@ export const personalInfo: PersonalInfo = {
   address: "Tây Mỗ, Hà Nội, Việt Nam",
   avatar: "/images/AVT.jpg",
   coverImage: "/images/NemMT.jpg",
-  shortBio: "Tôi là một lập trình viên đam mê công nghệ và luôn tìm kiếm cơ hội để học hỏi và phát triển.",
-  longBio: "Với niềm đam mê về công nghệ và sự sáng tạo, tôi luôn nỗ lực học hỏi và phát triển bản thân trong lĩnh vực lập trình. Tôi có kinh nghiệm làm việc với các công nghệ hiện đại và luôn tìm cách áp dụng những giải pháp tối ưu nhất cho từng dự án.",
+  shortBio: "Sinh viên năm 3 ngành CNTT, định hướng Backend (Golang). Luôn nỗ lực học hỏi và phát triển kỹ năng lập trình.",
+  longBio: "Tôi là sinh viên năm 3 tại Đại học Đại Nam, yêu thích lập trình backend, đặc biệt là với ngôn ngữ Golang. Tôi đang tích cực học tập, thực hành các dự án nhỏ và mong muốn trở thành Backend Developer chuyên nghiệp trong tương lai.",
   
   education: {
     school: "Trường Đại học Đại Nam",
@@ -121,105 +121,90 @@ export const personalInfo: PersonalInfo = {
     year: "2022 - 2026",
     gpa: "2.92/4.0",
     achievements: [
-      "Học bổng sinh viên khá năm 2024",
+      "Học bổng sinh viên khá năm 2024"
     ]
   },
 
   experience: [
     {
-      position: "Thực tập sinh Frontend Developer",
-      company: "Công ty Cổ phần Công nghệ ABC",
-      period: "06/2023 - 08/2023",
+      position: "Sinh viên năm 3 ngành CNTT",
+      period: "2022 - nay",
       responsibilities: [
-        "Phát triển giao diện người dùng sử dụng React và TypeScript",
-        "Tối ưu hóa hiệu suất và trải nghiệm người dùng",
-        "Làm việc với API và tích hợp dữ liệu"
-      ],
-      technologies: ["React", "TypeScript", "Tailwind CSS", "RESTful API"]
-    },
-    {
-      position: "Freelance Web Developer",
-      period: "01/2023 - Hiện tại",
-      responsibilities: [
-        "Thiết kế và phát triển website cho khách hàng",
-        "Tư vấn và triển khai giải pháp công nghệ",
-        "Bảo trì và nâng cấp hệ thống"
-      ],
-      technologies: ["React", "Node.js", "MongoDB", "Express"]
+        "Học tập các môn chuyên ngành về lập trình, cơ sở dữ liệu, mạng máy tính",
+        "Tự học và thực hành các dự án nhỏ về backend với Golang và SQL"
+      ]
     }
   ],
 
   skills: [
     {
-      name: "Frontend Development",
-      items: ["HTML/CSS", "JavaScript", "React", "TypeScript", "Tailwind CSS", "Next.js"],
-      level: "Advanced"
+      name: "Backend Development",
+      items: ["Golang (cơ bản)", "SQL (cơ bản)", "RESTful API"],
+      level: "Beginner"
     },
     {
-      name: "Backend Development",
-      items: ["golang", "c#", "MongoDB", "SQL", "RESTful API"],
-      level: "Intermediate"
+      name: "Frontend Development",
+      items: ["HTML", "CSS", "JavaScript"],
+      level: "Beginner"
     },
     {
       name: "Tools & Technologies",
-      items: ["Git", "VS Code", "Figma", "Postman", "Docker", "AWS"],
-      level: "Intermediate"
+      items: ["Git", "VS Code", "Postman"],
+      level: "Beginner"
     }
   ],
 
   projects: [
     {
-      name: "Website Quản lý Thư viện",
-      description: "Xây dựng hệ thống quản lý thư viện với chức năng mượn/trả sách, quản lý thành viên",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      link: "https://library-management-demo.vercel.app",
-      github: "https://github.com/yourusername/library-management",
-      image: "/images/projects/library.jpg",
+      name: "Beauty Spot Lite",
+      description: "Ứng dụng di động Flutter giới thiệu các địa chỉ làm đẹp, spa, salon... với bản đồ, đánh giá và tìm kiếm tiện lợi.",
+      technologies: ["Flutter", "Dart", "Firebase", "Google Maps API"],
+      link: "https://github.com/Nghia2624/beauty_spot_lite",
+      github: "https://github.com/Nghia2624/beauty_spot_lite",
+      image: "public/images/NemMT.jpg",
       featured: true,
-      startDate: "2023-06",
-      endDate: "2023-08"
+      startDate: "2024-01",
+      endDate: "2024-03"
     },
     {
-      name: "Ứng dụng Chat Real-time",
-      description: "Phát triển ứng dụng chat thời gian thực với tính năng nhóm và tin nhắn riêng tư",
-      technologies: ["React", "Socket.io", "MongoDB", "Node.js"],
-      link: "https://chat-app-demo.vercel.app",
-      github: "https://github.com/yourusername/chat-app",
-      image: "/images/projects/chat.jpg",
+      name: "WebChat - Ứng dụng chat real-time",
+      description: "Web chat real-time tối ưu hiệu suất, hỗ trợ chat nhóm, cá nhân, sử dụng Go cho backend và React cho frontend.",
+      technologies: ["Go", "React", "WebSocket", "Node.js", "MongoDB"],
+      link: "https://github.com/Nghia2624/webchat",
+      github: "https://github.com/Nghia2624/webchat",
+      image: "public/images/NemMT.jpg",
       featured: true,
       startDate: "2023-09",
-      endDate: "2023-11"
+      endDate: "2023-12"
+    },
+    {
+      name: "Vườn Thông Minh (AI & IoT)",
+      description: "Dự án IoT ứng dụng AI để giám sát, điều khiển vườn thông minh: cảm biến nhiệt độ, độ ẩm, tự động tưới, nhận diện hình ảnh sâu bệnh.",
+      technologies: ["IoT", "AI", "Python", "Raspberry Pi", "TensorFlow", "Node-RED"],
+      link: "https://github.com/Nghia2624/VuonThongMinh",
+      github: "https://github.com/Nghia2624/VuonThongMinh",
+      image: "public/images/NemMT.jpg",
+      featured: true,
+      startDate: "2023-05",
+      endDate: "2023-08"
     }
   ],
 
   certifications: [
-    {
-      name: "Chứng chỉ Frontend Developer",
-      issuer: "FPT Software Academy",
-      date: "12/2023",
-      credentialUrl: "https://credentials.fptsoftware.com/verify/123456",
-      expiryDate: "12/2025"
-    },
-    {
-      name: "Chứng chỉ React Developer",
-      issuer: "Meta",
-      date: "08/2023",
-      credentialUrl: "https://www.coursera.org/verify/123456"
-    }
+    // Chưa có chứng chỉ
   ],
 
   languages: [
     { name: "Tiếng Việt", level: "Native" },
-    { name: "Tiếng Anh", level: "Advanced", certification: "TOEIC 650" }
+    { name: "Tiếng Anh", level: "Beginner" }
   ],
 
   interests: [
-    "Phát triển web",
-    "Học máy",
-    "Thiết kế UI/UX",
-    "Công nghệ mới",
+    "Lập trình backend",
+    "Golang",
+    "Cơ sở dữ liệu",
     "Đọc sách",
-    "Thể thao"
+    "Đá bóng"
   ],
 
   socialLinks: {
@@ -229,7 +214,7 @@ export const personalInfo: PersonalInfo = {
     linkedin: "https://www.linkedin.com/in/ngh%C4%A9a-nghia-01369b364/"
   },
   
-  resumeUrl: "public/DoNgocNghia_CV.pdf" 
+  resumeUrl: "/DoNgocNghia_CV.pdf" 
 };
 
 // Validate the personal info

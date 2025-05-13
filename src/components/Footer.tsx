@@ -1,10 +1,9 @@
 import { memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { personalInfo } from '../data/personalInfo';
-import { FaGithub, FaFacebook, FaLinkedin, FaHeart, FaArrowUp } from 'react-icons/fa';
-import { SiZalo } from 'react-icons/si';
+import { FaHeart, FaArrowUp } from 'react-icons/fa';
 import { fadeInUp, container, hoverScale, hoverTilt, hoverBounce } from '../utils/animations';
-import { useScrollAnimation } from '../hooks/useAnimations';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { SOCIAL_LINKS } from '../utils/constants';
 import { IconType } from 'react-icons';
 
@@ -42,7 +41,7 @@ const QuickLink = memo(({ href, name }: typeof QUICK_LINKS[number]) => (
 QuickLink.displayName = 'QuickLink';
 
 const Footer = () => {
-  const [ref, inView, controls] = useScrollAnimation(0.1);
+  const [ref, , controls] = useScrollAnimation(0.1);
   
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

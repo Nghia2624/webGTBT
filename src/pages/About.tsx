@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/personalInfo';
-import { FaBirthdayCake, FaPhone, FaEnvelope, FaGraduationCap, FaCode, FaServer, FaTools, FaBriefcase, FaProjectDiagram, FaCertificate, FaLanguage, FaDownload } from 'react-icons/fa';
+import { FaBirthdayCake, FaPhone, FaEnvelope, FaGraduationCap, FaBriefcase, FaProjectDiagram, FaCertificate, FaLanguage, FaDownload } from 'react-icons/fa';
 import { SKILL_CATEGORIES } from '../utils/constants';
 
 const About = () => {
@@ -28,7 +28,7 @@ const About = () => {
                 </h1>
                 <p className="text-xl text-gray-300">{personalInfo.education.degree}</p>
                 <a
-                  href="/cv.pdf"
+                  href={personalInfo.resumeUrl}
                   download
                   className="inline-flex items-center gap-2 mt-4 px-6 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors shadow-lg"
                 >
